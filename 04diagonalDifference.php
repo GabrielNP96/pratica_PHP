@@ -1,5 +1,5 @@
 <?php
-/*Given a square matrix, calculate the absolute difference between the sums of its diagonals. */
+/*Dada uma matriz quadrada, calcule a diferença absoluta entre as somas de suas diagonais. */
 
 $array = [
     [1,4,8],
