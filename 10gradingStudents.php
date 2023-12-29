@@ -14,21 +14,22 @@
 
       if($gradeValue >= 38) {
 
-        if($isMultipleOfFive == 0 or is_int($isMultipleOfFive) == true or $isMultipleOfFiveTwo == 0 or is_int($isMultipleOfFiveTwo) == true) {
+        
           if ($isMultipleOfFiveTwo == 0 or is_int($isMultipleOfFiveTwo)) {
             array_push($roundGrades, $gradeValue + 1);
-          } elseif($isMultipleOfFive == 0 or is_int($isMultipleOfFive)) 
-          array_push($roundGrades, $gradeValue + 2);
 
-        }else {
+          } elseif($isMultipleOfFive == 0 or is_int($isMultipleOfFive)){ 
+            array_push($roundGrades, $gradeValue + 2);
+
+          }else {
 
           array_push($roundGrades, $gradeValue);
   
         }
+
       } else {
-
         array_push($roundGrades, $gradeValue);
-
+        
       }
         
     }
